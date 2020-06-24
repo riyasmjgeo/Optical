@@ -1,2 +1,2 @@
-# Codes used for analysing satellite optical bands
+# Codes used for analysing optical satellite images
 
