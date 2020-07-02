@@ -12,7 +12,7 @@ import arcpy
 import os
 
 # Getting the file names
-basedir = 'C:\\Mega\\Work_files\\Results\\SBAS\\Decompose\\'
+basedir = 'C:\\Mega\\Work_files\\Results\\SBAS\\K-means\\'
 files = os.listdir(basedir)
 print(files)
 # Define projection for all files as one after another
