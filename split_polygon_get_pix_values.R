@@ -33,9 +33,11 @@ for (i in uniq_shp_column){
   
   # Assigning category value (from the unique shp column) to every pixel
   # Creates a temporary variable and append that to the list defined before loop
-  polyid_temp = list(1:non_na_values)[[1]]
-  polyid_temp [1:non_na_values] = i
-  polyid = append(polyid, polyid_temp)
+  if (non_na_values > 0){
+    polyid_temp = list(1:non_na_values)[[1]]
+    polyid_temp [1:non_na_values] = i
+    polyid = append(polyid, polyid_temp)
+  }
 }
 
 # X-axis: Simply the number of pixels to plot
